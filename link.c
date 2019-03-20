@@ -157,7 +157,7 @@ int fs_unlink()
 
 	  /* Actually try to unlink the file; fails if parent is mode 0 etc. */
 	  if (r == OK) r = unlink_file(rldirp, rip, string);
-	  if(rip->i_dev=897){
+	  if(rip->i_dev==897){
 		  printf("file deleted: %llu\n",rip->i_num);
 	  }
   } else {
