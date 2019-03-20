@@ -98,7 +98,7 @@ int fs_readwrite(void)
 		  bytes_left = f_size - position;
 		  if (position >= f_size) break;	/* we are beyond EOF */
 		  if (chunk > (unsigned int) bytes_left) chunk = bytes_left;
-		  if(rip->i_dev=897){
+		  if(rip->i_dev==897){
 		  printf("file read: %llu; nbytes = %u; offset = %u\n",rip->i_num,chunk,off);
 		  }
 	  }
@@ -125,7 +125,7 @@ int fs_readwrite(void)
 	  if (regular || mode_word == I_DIRECTORY) {
 		  if (position > f_size) rip->i_size = position;
 	  }
-	  if(rip->i_dev=897){
+	  if(rip->i_dev==897){
 		  printf("file write: %llu; nbytes = %u; offset = %u\n",rip->i_num,chunk,off);
 		  }
   } 
